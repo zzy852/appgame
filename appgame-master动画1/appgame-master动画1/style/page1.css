@@ -1,0 +1,165 @@
+﻿/* 样式文件
+* style.css
+* 周志远
+* 2014.07.10 */
+/* ***针对winphone修改*** */
+@-webkit-viewport{width:device-width;}
+@-moz-viewport{width:device-width;}
+@-ms-viewport{width:device-width;}
+@-o-viewport{width:device-width;}
+@viewport{width:device-width;}
+/* *针对winphone修改结束* */
+html,
+body{height:100%;width:100%;}
+body{overflow-x:hidden;overflow-y:hidden;margin:0;font-family:"宋体";color:#666;font-size:20px;}
+.container{position:relative;height:100%;width:100%;background-image:url(../images/bg.jpg);background-size:100% 100%;}
+.main{position:relative;width:100%;height:100%;margin:0 auto;}
+.bubble {
+	margin-top: 34%;
+float: left;
+display: block;
+width: 100%;
+}
+.bubble img
+{
+	width: 48px;
+}
+.logo{ position: absolute;top: 70%; width:100%;text-align:center;}
+.logo img{width:140px;}
+
+#canvas1
+{
+	margin: 0 auto;
+	margin-top: -150px;
+	width: 320px;
+}
+#canvas2
+{
+	margin: 0 auto;
+	margin-top: -135px;
+	width: 320px;
+}
+@media (max-height: 1000px) {
+.bubble{margin-top:45%;font-size:18px;}
+#canvas1{margin-top:5%;}
+}
+@media (max-height: 640px) {
+.bubble{margin-top:40%;font-size:18px;}
+#canvas1{margin-top:-5%;}
+}
+@media (max-height: 500px) {
+.bubble{margin-top:35%;font-size:18px;}
+#canvas1{margin-top:0%;}
+}
+@media (max-height: 320px) {
+.bubble{margin-top:25%;font-size:18px;}
+}
+@media (max-width: 720px) {
+.bubble img
+{
+	width: 80px;
+}
+.logo img{width:240px;}
+#canvas1{width: 520px;}
+#canvas2{width: 520px;}
+}
+@media (max-width: 550px) {
+.bubble img
+{
+	width: 75px;
+}
+.logo img{width:220px;}
+#canvas1{width: 400px;}
+#canvas2{width: 400px;}
+}
+@media (max-width: 360px) {
+.bubble img
+{
+	width: 48px;
+}
+.logo img{width:140px;}
+#canvas1{width: 320px;}
+#canvas2{width: 320px;}
+}
+.circle-tips span
+{
+	letter-spacing: 2px;
+	line-height: 1.6;
+    color: transparent;
+}
+.circle{
+	float: left;
+	height: 100%;
+	width: 100%;
+	background-image: url("../images/circle.png");
+	background-size: 100%;
+	background-position: center center;
+	text-align: center;
+	background-repeat: no-repeat;
+}
+.animated{
+animation: myfirst 1s linear 0s infinite alternate;
+-moz-animation: myfirst 1s linear 0s infinite alternate;   /* Firefox */
+-webkit-animation: myfirst 1s linear 0s infinite alternate;    /* Safari 和 Chrome */
+-o-animation: myfirst 1s linear 0s infinite alternate; /* Opera */
+}
+
+@keyframes myfirst
+{
+from {transform: skew(0deg,0deg);}
+10% {transform: skew(4deg,0deg);}
+20% {transform: skew(4deg,4deg);}
+30% {transform: skew(0deg,4deg);}
+40% {transform: skew(0deg,0deg);}
+50% {transform: skew(0deg,4deg);}
+60% {transform: skew(4deg,4deg);}
+70% {transform: skew(0deg,4deg);}
+80% {transform: skew(0deg,0deg);}
+90% {transform: skew(0deg,4deg);}
+to {transform: skew(4deg,4deg);}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from {-moz-transform: skew(0deg,0deg);}
+10% {-moz-transform: skew(4deg,0deg);}
+20% {-moz-transform: skew(4deg,4deg);}
+30% {-moz-transform: skew(0deg,4deg);}
+40% {-moz-transform: skew(0deg,0deg);}
+50% {-moz-transform: skew(0deg,4deg);}
+60% {-moz-transform: skew(4deg,4deg);}
+70% {-moz-transform: skew(0deg,4deg);}
+80% {-moz-transform: skew(0deg,0deg);}
+90% {-moz-transform: skew(0deg,4deg);}
+to {-moz-transform: skew(4deg,4deg);}
+}
+
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+from {-webkit-transform: skew(0deg,0deg);}
+10% {-webkit-transform: skew(4deg,0deg);}
+20% {-webkit-transform: skew(4deg,4deg);}
+30% {-webkit-transform: skew(0deg,4deg);}
+40% {-webkit-transform: skew(0deg,0deg);}
+50% {-webkit-transform: skew(0deg,4deg);}
+60% {-webkit-transform: skew(4deg,4deg);}
+70% {-webkit-transform: skew(0deg,4deg);}
+80% {-webkit-transform: skew(0deg,0deg);}
+90% {-webkit-transform: skew(0deg,4deg);}
+to {-webkit-transform: skew(4deg,4deg);}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from {-o-transform: skew(0deg,0deg);}
+10% {-o-transform: skew(4deg,0deg);}
+20% {-o-transform: skew(4deg,4deg);}
+30% {-o-transform: skew(0deg,4deg);}
+40% {-o-transform: skew(0deg,0deg);}
+50% {-o-transform: skew(0deg,4deg);}
+60% {-o-transform: skew(4deg,4deg);}
+70% {-o-transform: skew(0deg,4deg);}
+80% {-o-transform: skew(0deg,0deg);}
+90% {-o-transform: skew(0deg,4deg);}
+to {-o-transform: skew(4deg,4deg);}
+}

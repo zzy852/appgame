@@ -1,0 +1,111 @@
+﻿/* 样式文件
+* style.css
+* 周志远
+* 2014.07.10 */
+/* ***针对winphone修改*** */
+@-webkit-viewport{width:device-width;}
+@-moz-viewport{width:device-width;}
+@-ms-viewport{width:device-width;}
+@-o-viewport{width:device-width;}
+@viewport{width:device-width;}
+/* *针对winphone修改结束* */
+html,
+body{height:100%;width:100%;}
+body{overflow-x:hidden;overflow-y:hidden;margin:0;font-family:"宋体";color:#666;font-size:14px/150%;}
+.container{position:relative;overflow:hidden;height:100%;width:100%;background-image:url(../images/bg.jpg);background-size:100% 100%;}
+.main{position:relative;overflow:hidden;width:100%;height:100%;margin:0 auto;}
+.content{float:left;width:100%;height:75%;margin:0 auto;padding-top:5px;}
+.footer{float:left;overflow:hidden;height:25%;width:100%;bottom:0;}
+.down{position:absolute;left:50%;}
+.down-img{width:20px;left:-10px;position:absolute;-webkit-animation-duration:3s;-moz-animation-duration:3s;-ms-animation-duration:3s;-o-animation-duration:3s;animation-duration:3s;-webkit-animation-iteration-count:infinite;-khtml-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;-ms-animation-iteration-count:infinite;-o-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-name:scrollbottom;-khtml-animation-name:scrollbottom;-moz-animation-name:scrollbottom;-ms-animation-name:scrollbottom;-o-animation-name:scrollbottom;animation-name:scrollbottom;}
+@-webkit-keyframes scrollbottom{
+	from{top:-10px;opacity:1.0;}
+	to{top:0px;opacity:0.4;}
+}
+@-khtml-keyframes scrollbottom{
+	from{top:-10px;opacity:1.0;}
+	to{top:0px;opacity:0.4;}
+}
+@-moz-keyframes scrollbottom{
+	from{top:-10px;-moz-opacity:1.0;}
+	to{top:0px;-moz-opacity:0.4;}
+}
+@-ms-keyframes scrollbottom{
+	from{top:-10px;filter:alpha(opacity=0);}
+	to{top:0px;filter:alpha(opacity=40);}
+}
+@-o-keyframes scrollbottom{
+	from{top:-10px;-o-opacity:1.0;}
+	to{top:0px;-o-opacity:0.4;}
+}
+@keyframes scrollbottom{
+	from{top:-10px;opacity:1.0;}
+	to{top:0px;opacity:0.4;}
+}
+.left{float:left;width:33.33%;height:100%;padding-top:8.75%;}
+.center{float:left;width:33.34%;height:100%;}
+.right{float:left;width:33.33%;height:100%;padding-top:8.75%;}
+.items{height:25%;width:100%;text-align:center;}
+.items img{min-width:70px;max-width:100%;max-height:100%;}
+.tips{text-align:center;margin:20px auto 0;}
+.logo{width:100%;text-align:center;}
+.logo img{width:140px;}
+.circle{float:left;display:none;height:25%;width:100%;overflow:hidden;background-image:url("../images/circle.png");background-size:100%;background-position:top;background-repeat:no-repeat;text-align:center;}
+.circle-hide{display:none;}
+.circle .circle-tips{margin-top:40px;opacity:0;}
+.circle .circle-time{margin-top:30%;}
+.circle .circle-title{height:0;}
+.circle .circle-title img{margin-top:50px;width:250px;max-width:100%;}
+@media (max-height: 1000px) {
+.tips{margin:50px auto 0;}
+.down-img{width:40px;left:-20px;}
+.circle .circle-time{margin-top:45%;font-size:18px;}
+.circle .circle-title{margin-bottom: 120px;}
+.circle .circle-title img{margin-top:80px;}
+.logo{margin-top:10px;}
+}
+@media (max-height: 640px) {
+.tips{margin:40px auto 0;}
+.down-img{width:30px;left:-15px;}
+.circle .circle-time{margin-top:40%;font-size:18px;}
+.circle .circle-title{margin-bottom: 80px;}
+.circle .circle-title img{margin-top:70px;}
+.logo{margin-top:5px;}
+}
+@media (max-height: 500px) {
+.tips{margin:25px auto 0;}
+.down-img{width:20px;left:-10px;}
+.circle .circle-time{margin-top:30%;font-size:18px;}
+.circle .circle-title{margin-bottom: 60px;}
+.circle .circle-title img{margin-top:60px;}
+.logo{margin-top:0px;}
+}
+@media (max-height: 320px) {
+.circle .circle-time{margin-top:10%;font-size:18px;}
+.circle .circle-title{margin-bottom: 30px;}
+.logo{margin-top:0px;}
+}
+@media (max-width: 720px) {
+	body{font-size: 24px;}
+	.circle .circle-time{font-size:24px;}
+	.circle .circle-title{font-size:24px;}
+	.circle .circle-title img{width:250px;}
+	.logo img{width:240px;}
+	.circle .circle-title img{width:400px;}
+}
+@media (max-width: 460px) {
+	body{font-size: 20px;}
+	.circle .circle-time{font-size:20px;}
+	.circle .circle-title{font-size:20px;}
+	.circle .circle-title img{width:200px;}
+	.logo img{width:200px;}
+	.circle .circle-title img{width:300px;}
+}
+@media (max-width: 390px) {
+	body{font-size: 18px;}
+	.circle .circle-time{font-size:18px;}
+	.circle .circle-title{font-size:18px;}
+	.circle .circle-title img{width:180px;}
+	.logo img{width:140px;}
+	.circle .circle-title img{width:250px;}
+}
