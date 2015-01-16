@@ -39,13 +39,13 @@
 
 /****针对winphone修改****/
 if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-    var msViewportStyle = document.createElement("style")
+    var msViewportStyle = document.createElement("style");
     msViewportStyle.appendChild(
         document.createTextNode(
             "@-ms-viewport{width:auto!important}"
         )
-    )
-    document.getElementsByTagName("head")[0].appendChild(msViewportStyle)
+    );
+    document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
 }
 //游戏操作
 var g_totle = 4;
@@ -101,7 +101,7 @@ var appgame = {
             min = "0" + min;
         }
         if (min >= 60) {
-            min = min % 60
+            min = min % 60;
         }
         lastsecs = parseInt(appgame.count / 1000);
         if (lastsecs < 10) {
@@ -113,7 +113,7 @@ var appgame = {
         }
         appgame.timestr = min + "\"" + lastsecs + "\'" + lastmsecs;
         appgame.count = appgame.count + 10;
-        t = setTimeout("appgame.timedCount()", 10)
+        t = setTimeout("appgame.timedCount()", 10);
     },
     stopCount: function() {
         clearTimeout(appgame.timer);
@@ -137,17 +137,13 @@ var appgame = {
     },
     //游戏胜利结束计时
     win: function() {
-        // $(".circle-tips").fadeIn("400", function() {
-        //     appgame.toend();
-        //     appgame.stopCount();
-        // });
         $(".circle-tips").animate({
                 opacity: 1
             },
             400, function() {
                 appgame.toend();
                 appgame.stopCount();
-            })
+            });
     },
     //过场
     toend: function() {
@@ -156,7 +152,7 @@ var appgame = {
             },
             600, function() {
                 appgame.end();
-            })
+            });
     },
     //结束
     end: function() {
@@ -172,9 +168,6 @@ var appgame = {
             $(".circle-title").animate({
                 height: "140px"
             }, 1000);
-            // $(".logo").animate({
-            //     marginTop: "20px"
-            // }, 1000);
         });
     }
-}
+};
